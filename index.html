@@ -1,1 +1,17 @@
-A GitHub pages site for getting GloVe embeddings.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <h1><u>glove-embeddings.github.io</u></h1>
+            <p>This site acts as a static API to retrieve <a href="https://nlp.stanford.edu/projects/glove/">GloVe embeddings</a>.</p>
+            <p>The four available GloVe embeddings are: glove.6B.50d, glove.6B.100d, glove.6B.200d and glove.6B.300d. All four are trained on six billion tokens, and the embeddings are 50, 100, 200, and 300 dimensional, respectively.</p>
+            <p>To use the API to get an embedding for a word, e.g. "hello", simply query: <a href=https://glove-embeddings.github.io/glove.6B.50d/hello>https://glove-embeddings.github.io/glove.6B.50d/hello</a>. The result is a list of floats representing the 50 dimensional embedding for the word "hello", which can be parsed with a JSON parser.</p>
+            <p>We do not provide the embeddings for all 400,000 tokens in the GloVe embeddings, but only the most common 50,000 tokens which contain only English letters.</p>
+        </div>
+    </body>
+</html>
